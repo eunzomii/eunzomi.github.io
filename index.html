@@ -40,7 +40,14 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 16px; line-height: 1.75; }
+  body { 
+    background-color: #fafaf8;
+    background-image:
+      linear-gradient(rgba(232,160,168,0.25) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232,160,168,0.25) 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: var(--text); font-family: var(--font-sans); font-size: 16px; line-height: 1.75;
+  }
   ::selection { background: #fce4e7; }
   ::-webkit-scrollbar { width: 3px; }
   ::-webkit-scrollbar-thumb { background: var(--pink); }
@@ -348,7 +355,7 @@
 <aside>
   <div>
     <div class="sidebar-name"><span>Eunjeong</span></div>
-    <div class="sidebar-role">PhD Candidate · Year 1<br>Mechanical Engineering</div>
+    <div class="sidebar-role">PhD Student<br>Mechanical Engineering</div>
   </div>
 
   <nav class="sidebar-nav">
@@ -387,7 +394,7 @@
       <div class="hero-name-block">
         <h1>Eunjeong</h1>
         <div class="hero-position">
-          <strong>PhD Student, Year 1</strong><br>
+          <strong>PhD Student</strong><br>
           Department of Mechanical Engineering<br>
           The Pennsylvania State University
         </div>
